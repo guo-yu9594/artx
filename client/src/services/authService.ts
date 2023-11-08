@@ -8,7 +8,7 @@ namespace AuthService {
     then,
     error,
   }: ServicePOSTMethodProps): void {
-    axios.post("http://localhost:3001/auth/login", body, config).then(
+    axios.post("https://www.gyartx.space/auth/login", body, config).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -24,7 +24,7 @@ namespace AuthService {
     then,
     error,
   }: ServicePOSTMethodProps): void {
-    axios.post("http://localhost:3001/auth/register", body, config).then(
+    axios.post("https://www.gyartx.space/auth/register", body, config).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -39,7 +39,7 @@ namespace AuthService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get("http://localhost:3001/auth/google/url", config).then(
+    axios.get("https://www.gyartx.space/auth/google/url", config).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -54,7 +54,7 @@ namespace AuthService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get("http://localhost:3001/auth/google/redirect", config).then(
+    axios.get("https://www.gyartx.space/auth/google/redirect", config).then(
       (res: any) => {
         if (then) then(res);
       },

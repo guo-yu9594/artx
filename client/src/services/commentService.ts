@@ -15,7 +15,7 @@ namespace CommentService {
     error,
   }: ServiceGETMethodProps): void {
     axios
-      .get(`http://localhost:3001/comment/post/${id}`, handleReqConfig(config))
+      .get(`https://www.gyartx.space/comment/post/${id}`, handleReqConfig(config))
       .then(
         (res: any) => {
           if (then) then(res);
@@ -34,7 +34,7 @@ namespace CommentService {
   }: ServiceGETMethodProps): void {
     axios
       .get(
-        `http://localhost:3001/comment/replies/${id}`,
+        `https://www.gyartx.space/comment/replies/${id}`,
         handleReqConfig(config)
       )
       .then(
@@ -55,7 +55,7 @@ namespace CommentService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/comment/create`,
+        `https://www.gyartx.space/comment/create`,
         body,
         handleReqConfig(config)
       )
@@ -77,7 +77,7 @@ namespace CommentService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/comment/reply`,
+        `https://www.gyartx.space/comment/reply`,
         body,
         handleReqConfig(config)
       )
@@ -100,7 +100,7 @@ namespace CommentService {
   }: ServicePUTMethodProps): void {
     axios
       .put(
-        `http://localhost:3001/comment/update/${id}`,
+        `https://www.gyartx.space/comment/update/${id}`,
         body,
         handleReqConfig(config)
       )
@@ -122,7 +122,7 @@ namespace CommentService {
   }: ServiceDELETEMethodProps): void {
     axios
       .delete(
-        `http://localhost:3001/comment/delete/${id}`,
+        `https://www.gyartx.space/comment/delete/${id}`,
         handleReqConfig(config)
       )
       .then(

@@ -11,7 +11,7 @@ namespace UserService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get("http://localhost:3001/user/", handleReqConfig(config)).then(
+    axios.get("https://www.gyartx.space/user/", handleReqConfig(config)).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -27,7 +27,7 @@ namespace UserService {
     error,
   }: ServiceGETMethodProps): void {
     axios
-      .get("http://localhost:3001/user/liked-id", handleReqConfig(config))
+      .get("https://www.gyartx.space/user/liked-id", handleReqConfig(config))
       .then(
         (res: any) => {
           if (then) then(res);
@@ -44,7 +44,7 @@ namespace UserService {
     error,
   }: ServiceGETMethodProps): void {
     axios
-      .get("http://localhost:3001/user/saved-id", handleReqConfig(config))
+      .get("https://www.gyartx.space/user/saved-id", handleReqConfig(config))
       .then(
         (res: any) => {
           if (then) then(res);
@@ -62,7 +62,7 @@ namespace UserService {
   }: ServiceDELETEMethodProps): void {
     axios
       .delete(
-        `http://localhost:3001/user/delete/`,
+        `https://www.gyartx.space/user/delete/`,
         handleReqConfig(config)
       )
       .then(

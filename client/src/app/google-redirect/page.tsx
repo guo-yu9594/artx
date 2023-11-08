@@ -11,7 +11,7 @@ export default function GoogleRedirectionPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/auth/google/redirect?code=${code}`)
+      .get(`https://www.gyartx.space/auth/google/redirect?code=${code}`)
       .then((res) => {
         Cookies.set("artx-token", res.data.token, { expires: 7 });
         location.href = "/";

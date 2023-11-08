@@ -13,7 +13,7 @@ namespace PostService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get(`http://localhost:3001/post/`, handleReqConfig(config)).then(
+    axios.get(`https://www.gyartx.space/post/`, handleReqConfig(config)).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -28,7 +28,7 @@ namespace PostService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get(`http://localhost:3001/post/my`, handleReqConfig(config)).then(
+    axios.get(`https://www.gyartx.space/post/my`, handleReqConfig(config)).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -43,7 +43,7 @@ namespace PostService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get(`http://localhost:3001/post/liked`, handleReqConfig(config)).then(
+    axios.get(`https://www.gyartx.space/post/liked`, handleReqConfig(config)).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -58,7 +58,7 @@ namespace PostService {
     then,
     error,
   }: ServiceGETMethodProps): void {
-    axios.get(`http://localhost:3001/post/saved`, handleReqConfig(config)).then(
+    axios.get(`https://www.gyartx.space/post/saved`, handleReqConfig(config)).then(
       (res: any) => {
         if (then) then(res);
       },
@@ -75,7 +75,7 @@ namespace PostService {
     error,
   }: ServicePOSTMethodProps): void {
     axios
-      .post(`http://localhost:3001/post/create`, body, handleReqConfig(config))
+      .post(`https://www.gyartx.space/post/create`, body, handleReqConfig(config))
       .then(
         (res: any) => {
           if (then) then(res);
@@ -95,7 +95,7 @@ namespace PostService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/post/like/${id}`,
+        `https://www.gyartx.space/post/like/${id}`,
         body,
         handleReqConfig(config)
       )
@@ -118,7 +118,7 @@ namespace PostService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/post/unlike/${id}`,
+        `https://www.gyartx.space/post/unlike/${id}`,
         body,
         handleReqConfig(config)
       )
@@ -141,7 +141,7 @@ namespace PostService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/post/save/${id}`,
+        `https://www.gyartx.space/post/save/${id}`,
         body,
         handleReqConfig(config)
       )
@@ -164,7 +164,7 @@ namespace PostService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/post/unsave/${id}`,
+        `https://www.gyartx.space/post/unsave/${id}`,
         body,
         handleReqConfig(config)
       )
@@ -186,7 +186,7 @@ namespace PostService {
   }: ServicePOSTMethodProps): void {
     axios
       .post(
-        `http://localhost:3001/post/upload-file`,
+        `https://www.gyartx.space/post/upload-file`,
         body,
         handleReqConfig(config)
       )
@@ -209,7 +209,7 @@ namespace PostService {
   }: ServicePUTMethodProps): void {
     axios
       .put(
-        `http://localhost:3001/post/update/${id}`,
+        `https://www.gyartx.space/post/update/${id}`,
         body,
         handleReqConfig(config)
       )
@@ -231,7 +231,7 @@ namespace PostService {
   }: ServiceDELETEMethodProps): void {
     axios
       .delete(
-        `http://localhost:3001/post/delete/${id}`,
+        `https://www.gyartx.space/post/delete/${id}`,
         handleReqConfig(config)
       )
       .then(
