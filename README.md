@@ -2,6 +2,8 @@
   <img src="public/ARTX.png">
 </center>
 
+Deployed web client : https://artx.vercel.app
+
 # Project Description
 
 A social media application that allows users to share images, videos, and music. Key features include a news feed, comments, social interactions (likes and saves), secure authentication via Google or email, media and data storage on cloud services like B2 Cloud Storage and Google Cloud Platform. The application aims to promote creativity, social connectivity, and multimedia exploration within its user community.
